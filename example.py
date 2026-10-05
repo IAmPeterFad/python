@@ -9,4 +9,3 @@ while value:
     else:
         value = 1
         continue
-
