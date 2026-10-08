@@ -33,6 +33,7 @@ print("Your Learning Path:" \
 "\n- Data Engineering" \
 "\n- AI")
 
+print("\n")
 
 price_shirt = 25.00
 price_jeans = 45.50
@@ -40,4 +41,12 @@ price_jeans = 45.50
 qty_shirt = 2
 qty_jeans = 1
 
-total_
+total_shirt = price_shirt * qty_shirt
+total_jeans = price_jeans * qty_jeans
+subtotal = total_jeans + total_shirt
+print("Subtotal:", subtotal)
+discount = subtotal * 0.10
+print("Discount:", discount)
+final_total = subtotal - discount
+
+print("Final total:", final_total)
