@@ -161,3 +161,10 @@ print(phone1.find("-"))
 print(phone1[phone1.find("-")+1:])
 print(phone2[phone2.find("-")+1:])
 print(phone3[phone3.find("-")+1:])
+
+# Validation
+country = "USA1"
+print(country.isalpha())
+
+phone = "3.90"
+print(phone.isnumeric())
