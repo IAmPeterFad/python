@@ -134,3 +134,30 @@ data = "968-Maria, (Data Engineer);; 27y "
 new = data.replace("968-", "").replace(")", ",").replace("(", "").replace(";", "").replace("y", "").strip()
 print(new.split(","))
 
+# Search
+phone = "+49-176-12345"
+print(phone.startswith("+49"))
+
+email = "peterfad@gmail.com"
+print(email.endswith("@gmail.com"))
+print("@" in email)
+
+file = "data_backup.csv"
+print(file.endswith(".csv"))
+
+url = "https://api.company.com.v1.data"
+print("/api." in url)
+
+phone1 = "+48-176-12345"
+phone2 = "48-365-12617"
+phone3 = "0048-275-27818"
+
+print(phone1[4:])
+print(phone2[3:])
+print(phone3[5:])
+
+print(phone1.find("-"))
+
+print(phone1[phone1.find("-")+1:])
+print(phone2[phone2.find("-")+1:])
+print(phone3[phone3.find("-")+1:])
