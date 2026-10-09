@@ -92,3 +92,45 @@ print(data[5:7])
 
 # Extract the Day
 print(data[8:])
+
+# Whitespace Cleaning
+Role = "  Engineering"
+print(Role.lstrip())
+
+Role = "Engineering ".rstrip()
+print(Role)
+
+text = "  Engineering    ".strip()
+print(text)
+
+text = "Data Engineering".strip()
+print(text)
+
+text = "####Abc####".strip("#")
+print(text)
+
+text = "      Engineering"
+print(len(text))
+print(len(text.strip()))
+
+num_whitespace = len(text) - len(text.strip())
+is_data_clean = len(text) == len(text.strip())
+
+print(num_whitespace)
+print(is_data_clean)
+
+# Case Conversion
+info = "Python PROGRAMMING"
+print(info.lower())
+print(info.upper())
+
+search = "Email ".lower().strip()
+data = "  email".lower().strip()
+
+print(search == data)
+
+# Challange
+data = "968-Maria, (Data Engineer);; 27y "
+new = data.replace("968-", "").replace(")", ",").replace("(", "").replace(";", "").replace("y", "").strip()
+print(new.split(","))
+
