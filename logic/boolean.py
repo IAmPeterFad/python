@@ -140,11 +140,11 @@ email = "peterfad20@gmail.com"
 print((email is not "" and email is not None) and email.endswith(".com") and "@" in email)
 # user is string, is not None and is longer than 5 characters
 user = "Peterfad"
-print(len(user) > 5 and user is not None and isinstance(user,str) )
+print(len(user) > 5 and user != None and isinstance(user,str) )
 # user is an admin or moderator and either they are not banned and have verified their mail
-admin = False
-moderator = False
-banned = True
-verified = False
+admin = True
+moderator = True
+banned = False
+verified = True
 
-
+print((admin == True or moderator == True) and (banned != True or verified == True))
