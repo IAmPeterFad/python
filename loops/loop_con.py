@@ -55,3 +55,34 @@ for item in items:
         break
 else:
     print("All numbers are odd")
+
+names = ["Kinglesy", "Macus", "Marie", "Peace", "Prayer"]
+
+for name in names:
+    if name is None or name is "":
+        print("Found a missing name")
+        break
+else:
+    print("All names are available")
+
+# Check if all files are csv
+
+files = [
+    "data.csv",
+    "admin.txt",
+    "class.csv",
+    "note.pdf"
+]
+
+for file in files:
+    if not file.endswith(".csv"):
+        print("Not files are in csv format")
+        break
+else:
+    print("All files are csv")
+
+
+for file in files:
+    if not file.endswith(".csv"):
+        print(f"{file} is not in csv format")
+        continue
