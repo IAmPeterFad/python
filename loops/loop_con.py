@@ -40,4 +40,18 @@ for email in emails:
         break
     print(f"Processing Email: {email}")
 
+# Else in loops
+items = [1, 3, 5, 7]
+for item in items:
+    print(item)
+else:
+    print("Loop is completed")
 
+
+items = [1, 3, 4, 7]
+for item in items:
+    if item % 2 == 0:
+        print(f"Even num found: {item}")
+        break
+else:
+    print("All numbers are odd")
