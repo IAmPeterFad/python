@@ -86,3 +86,21 @@ for file in files:
     if not file.endswith(".csv"):
         print(f"{file} is not in csv format")
         continue
+
+# Python Challenge
+# Check whether any filenames appears more than onces
+
+file_list = [
+    "report.csv",
+    "data.xlsx",
+    "summary.docx",
+    "report.csv",
+    "data.csv"
+]
+
+for file in file_list:
+    if file == file:
+        print("Duplicate found")
+        break
+else:
+    print("All files are unique")
