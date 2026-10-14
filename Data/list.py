@@ -13,5 +13,19 @@ empty = list()
 letters = list("Python")
 numbers = list(range(1,5))
 
-print(letters)
-print(numbers)
+
+# Matrix
+matrix = [
+    ["a", "b", "c"], 
+    ["d", "e", "f"]
+]
+
+mixed_matrix = [
+    ["a", 4, "c"],
+    [1, 2],
+    [True]
+]
+
+print(matrix)
+print(type(matrix))
+print(mixed_matrix)
