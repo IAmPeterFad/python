@@ -104,3 +104,33 @@ for file in file_list:
         break
 else:
     print("All files are unique")
+
+# Nested Loops
+for x in range(3):
+    for y in range (2):
+        print((x, y))
+
+# Use case
+colors = ["Red", "Blue", "Green"]
+sizes = ["L", "M", "S"]
+
+for color in colors:
+    for size in sizes:
+        print(f"{color} - Size {size}")
+
+years = ["2026", "2027"]
+months = ["Jan", "Feb"]
+days = range(1, 29)
+
+for y in years:
+    for m in months:
+        for d in days:
+            print(f"report_{y}_{m}_{d}.csv")
+
+# SELECT count(*) FROM customers where id is NULL;
+tables = ["customers", "orders", "products", "prices"]
+columns = ["id", "create_date"]
+
+for t in tables:
+    for c in columns:
+        print(f"SELECT count(*) FROM {t} where {c} is NULL;")
