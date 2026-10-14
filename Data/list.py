@@ -26,6 +26,26 @@ mixed_matrix = [
     [True]
 ]
 
-print(matrix)
-print(type(matrix))
-print(mixed_matrix)
+# print(matrix)
+# print(type(matrix))
+# print(mixed_matrix)
+
+# Access and Read
+lst = ["a", "b", "c", "d"]
+
+print(lst[-1])
+
+matrix = [
+    ["a", "b", "c"],    # Row 1
+    ["d", "e", "f"],    # Row 2
+    ["g", "h", "i"]     # Row 3
+]
+
+print(matrix[0][-1])
+print(matrix[1])
+
+# Slicing
+print(lst[:2])
+print(lst[:])
+print(matrix[:2])
+print(matrix[0][1:])
