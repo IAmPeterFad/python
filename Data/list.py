@@ -49,3 +49,22 @@ print(lst[:2])
 print(lst[:])
 print(matrix[:2])
 print(matrix[0][1:])
+
+# How to unpack data
+person = ["Maria", 29, "Data Engineer", "Spain"]
+# name = person[0]
+# age = person[1]
+# role = person[2]
+# city = person[3]
+
+name, age, role, country = person
+name, *details, country = person
+name, *details = person
+name, _, role, _ = person
+name, *_, country = person
+
+print(name)
+print(details)
+print(country)
+print(*_)
+
